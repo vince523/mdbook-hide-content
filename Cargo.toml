@@ -1,0 +1,20 @@
+[package]
+name = "mdbook-hide-content"
+version = "0.1.0"
+edition = "2021"
+description = "A mdBook preprocessor that adds content hiding functionality"
+license = "MIT"
+
+[dependencies]
+mdbook = "0.4"
+regex = "1.5"
+clap = { version = "4.0", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "mdbook-hide-content"
+path = "src/main.rs"
+
+[lib]
+name = "mdbook_hide_content"
+path = "src/lib.rs"
